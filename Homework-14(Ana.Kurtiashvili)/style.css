@@ -1,90 +1,81 @@
-body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-     overflow-y: hidden;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
+body {
+     width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: rgb(25, 161, 174);
+  font-family: sans-serif;
+}
 
 .box {
-      width: 100vw;   
-  height: 100vh;  
-  position: absolute;
-  background-color: rgba(25, 161, 174, 1);
-  z-index: -3;
- overflow: hidden;
+       position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
 }
 
+.circle-one,
+.circle-two {
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0.0001) 0.78%,
+    #53ffee 99.94%
+  );
+  opacity: 0.35;
+}
 .circle-one {
-    width: 1200px;
-    height: 1200px;
-    border-radius: 50%;
-    background: RGBA(9, 137, 180, 0.0001);
-    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
-    position: absolute;
-    z-index: -1;
-    top: -40%;
-    left: -15%;
-    transform: rotate(165deg);
-    opacity: 50%;
+     top: -45%;
+  left: -20%;
+  transform: rotate(165deg);
 }
 
 .circle-two {
-     width: 1200px;
-    height: 1200px;
-    border-radius: 50%;
-    background: RGBA(9, 137, 180, 0.0001);
-    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
-    position: absolute;
-    z-index: -1;
-    transform: rotate(90deg);
-    opacity: 0.25;
-    top: 600px;
-left: 1000px;
-
+   bottom: -40%;
+  right: -20%;
+  transform: rotate(90deg);
 }
 
 .card {
-    border-radius: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 450px;
-height: 490px;
-background-color: white;
-overflow: hidden;
-z-index: 1;
+     position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: min(90%, 450px);
+  height: 460px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .background-image {
-    margin: 0;
-    width: 100%;
-    height: 40%;
-   background: rgba(83, 255, 238, 1);
-   position: relative;
-   padding: 10px;
+    position: relative;
+  width: 100%;
+  height: 40%;
+  background: rgb(83, 255, 238);
 }    
 
 
 .profile-image img {
-    position: absolute;
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
-    bottom: 0;
-    left: 47%;
-    transform: translate(-50%, 50%);
-    background-color: white;
-    padding: 10px;
+     position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 8px;
 
 }
 
@@ -93,10 +84,9 @@ z-index: 1;
     }
 
 .profile-content h2 {
-   font-family: sans-serif;
 font-weight: 700;
 font-style: bold;
-font-size: 18px;
+font-size: 24px;
 line-height: 125%;
 letter-spacing: 0px;
 text-align: center;
@@ -104,10 +94,10 @@ text-align: center;
 }
 
 .profile-content p {
-    font-family: sans-serif;
+  
 font-weight: 400;
 font-style: normal;
-font-size: 14px;
+font-size: 18px;
 line-height: 125%;
 letter-spacing: 0px;
 text-align: center;
@@ -118,13 +108,16 @@ text-align: center;
 .profile-stats {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 50px;
     border-top: 1px solid #e0e0e0;
     color: #000000;
 }
 
+
+.stat {
+  padding: 15px;
+}
 .stat h3 {
-    font-family: sans-serif;
 font-weight: 700;
 font-style: bold;
 font-size: 22px;
@@ -136,7 +129,6 @@ text-align: center;
 
 .stat p {
     color: grey;
-    font-family: Kumbh Sans;
 font-weight: 400;
 font-style: normal;
 font-size: 15px;
@@ -146,21 +138,94 @@ text-align: center;
 
 }
 
-
-@media (min-width: 768px) {
-  .container {
-    width: 600px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 900px;
-  }
-}
+/* Responsive Design, romelic ar maqvs jer naswavli da aim damiwera */
 
 @media (max-width: 768px) {
-  body {
-    padding: 20px;
+  .card {
+    width: min(90%, 380px);
+    height: 440px;
+  }
+
+  .circle-one,
+  .circle-two {
+    width: 900px;
+    height: 900px;
+  }
+
+  .circle-one {
+    top: -55%;
+    left: -35%;
+  }
+
+  .circle-two {
+    bottom: -50%;
+    right: -35%;
+  }
+
+  .profile-content h2 {
+    font-size: 22px;
+  }
+
+  .profile-content p {
+    font-size: 16px;
+  }
+
+  .profile-stats {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+    height: auto;
+    padding-bottom: 120px;
+  }
+
+  .background-image {
+    height: 35%;
+  }
+
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+    bottom: -60px;
+  }
+
+  .profile-content h2 {
+    font-size: 20px;
+    margin-top: 70px;
+  }
+
+  .profile-content p {
+    font-size: 15px;
+  }
+
+  .profile-stats {
+    margin-top: 30px;
+  }
+
+  .stat h3 {
+    font-size: 18px;
+  }
+
+  .stat p {
+    font-size: 13px;
+  }
+
+  .circle-one,
+  .circle-two {
+    width: 700px;
+    height: 700px;
+  }
+
+  .circle-one {
+    top: -65%;
+    left: -50%;
+  }
+
+  .circle-two {
+    bottom: -60%;
+    right: -50%;
   }
 }
