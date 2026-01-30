@@ -29,6 +29,10 @@ https://www.figma.com/design/opLphKmHq2loVdSZdqGywv/skilled-elearning-landing-pa
 
 ![Design Preview](./preview.png)
 
+![profile card](Homework-14(Ana.Kurtiashvili)/preview.png)
+![skilled](homework-14(1)(Ana.Kurtiashvili)/preview.png)
+
+
 #### 🚀 (Optional) ჰოსტინგი
 
 სასურველია (მაგრამ არასავალდებულო) ნამუშევრის ატვირთვა **GitHub Pages**-ზე, რათა შედეგი ლინკის სახით იყოს ხელმისაწვდომი.

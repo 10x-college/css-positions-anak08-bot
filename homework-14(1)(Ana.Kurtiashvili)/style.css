@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  font-family: "Plus Jakarta Sans";
+}
+
+nav {
+  display: block;
+  height: 59px;
+  max-width: 1120px;
+  margin: 24px 160px 24px 160px;
+}
+
+.logo {
+  width: 111px;
+  height: 28px;
+  color: rgba(19, 24, 63, 1);
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 1000;
+  font-size: 36px;
+}
+
+.get-started-icon {
+  text-decoration: none;
+  width: 168px;
+  height: 59px;
+  background-color: rgba(19, 24, 63, 1);
+  color: white;
+  padding: 16px 32px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  border-radius: 30px;
+  margin-left: 841px;
+  text-align: center;
+  position: absolute;
+  right: 160px;
+  top: 24px;
+}
+
+.hero-section {
+  width: 100%;
+  height: 688px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-text {
+  display: inline-block;
+  width: 544px;
+  margin: 174.5px 0 0 160px;
+  display: inline-block;
+}
+
+.hero-text h1 {
+  display: block;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 120%;
+  width: 457px;
+}
+
+.hero-text p {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  width: 457px;
+  color: rgba(131, 134, 154, 1);
+  margin-top: 24px;
+}
+
+.hero-started-icon {
+  display: inline-block;
+  text-decoration: none;
+  width: 168px;
+  height: 59px;
+  color: white;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  position: relative;
+  z-index: -9;
+}
+
+.purple-shape {
+  display: inline-block;
+  width: 317px;
+  height: 1007px;
+  border-radius: 158.5px;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  transform: rotate(45deg);
+  position: absolute;
+  top: -290px;
+  left: 84%;
+  z-index: -5;
+}
+
+.pink-shape {
+  display: inline-block;
+  width: 317px;
+  height: 560px;
+  border-radius: 158.5px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  position: absolute;
+  right: 268px;
+  bottom: 50px;
+  z-index: -4;
+}
+
+.pink-shape .image {
+  border-radius: 158.5px;
+  position: absolute;
+  bottom: 0px;
+  width: 317px;
+}
+
+.members {
+  text-align: center;
+  display: inline-block;
+  width: 155px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.1589);
+  border-radius: 18px;
+  position: absolute;
+  top: 199px;
+  right: 155px;
+  padding: 20px 57px 19px 24px;
+}
+
+.members h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: rgba(131, 134, 154, 1);
+}
+
+.members p {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: rgba(19, 24, 63, 1);
+}
+
+.course-hours {
+  text-align: center;
+  display: inline-block;
+  width: 199px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.1589);
+  border-radius: 18px;
+  position: absolute;
+  padding: 20px 57px 19px 24px;
+  top: 450px;
+  right: 520px;
+}
+
+.course-hours h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: rgba(131, 134, 154, 1);
+}
+
+.course-hours p {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: rgba(19, 24, 63, 1);
+}
+
+.courses {
+  display: block;
+  max-width: 1120px;
+  opacity: 1;
+  margin: 0 auto;
+}
+
+.course-box {
+  display: inline-block;
+  width: 352px;
+  height: 322px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 1);
+  margin-bottom: 84px;
+  margin-left: 18px;
+  vertical-align: top;
+  padding: 64px 32px 40px 32px;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.0442);
+  position: relative;
+}
+
+.course-box:first-child {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 64px 32px 144px 32px;
+  line-height: 150%;
+}
+
+.course-box h3 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: rgba(19, 24, 63, 1);
+  text-align: left;
+}
+
+.course-box p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: rgba(131, 134, 154, 1);
+  margin-top: 24px;
+}
+
+.course-box a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: rgba(247, 71, 128, 1);
+  margin-top: 50px;
+}
+
+.course-image {
+  position: absolute;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  top: -28px;
+  display: inline-block;
+  text-align: center;
+}
+
+.course-image img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 107px;
+  padding: 24px 160px;
+  background-color: rgba(19, 24, 63, 1);
+}
+
+.footer-logo {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 36px;
+  display: inline-block;
+}
+
+.footer-get-started-icon {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  width: 168px;
+  height: 59px;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  color: white;
+  border-radius: 28px;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  position: absolute;
+  right: 160px;
+  margin-left: 841px;
+  bottom: 24px;
+}
